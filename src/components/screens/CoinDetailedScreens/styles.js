@@ -1,25 +1,22 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
-  headerContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-  },
-  ticketCointainer: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  ticketTitle: {
+  currentPrice: {
     color: "white",
-    fontWeight: "bold",
-    marginHorizontal: 5,
-    fontSize: 17,
+    fontSize: 30,
+    fontWeight: "600",
+    letterSpacing: 1,
   },
-  rankContainer: {backgroundColor: "#585858",
-paddingHorizontal: 5,
-paddingVertical: 2,
-borderRadius: 5,
-}
+  name: { color: "white", fontSize: 15 },
+
+  priceContainer: {
+    padding: 15,
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  priceChange: { color: "white", fontSize: 17, 
+  fontWeight: "500" },
 });
+
 export default styles;
