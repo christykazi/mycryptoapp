@@ -12,6 +12,7 @@ return(
     <Image source={{uri: image}} style={{height: 25, width: 25, marginLeft: 12}}/>
     <Text style={styles.ticketTitle}>{symbol.toUpperCase()}</Text>
     <View style={styles.rankContainer}> 
+    <Text>hello</Text>
     <Text style={{color: "white", fontWeight: "bold", fontSize: 15}}>#{marketCapRank}</Text>
     </View>
    </View>
