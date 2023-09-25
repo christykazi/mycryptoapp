@@ -32,8 +32,8 @@ const CoinDetailedScreens = () => {
     <View style={{ paddingHorizontal: 10 }}>
       <ChartPathProvider
         data={{
-          points: prices.map((price) => ({ x: price[0], y: price[1] })),
-          smoothings: "bezier",
+          points: prices.map(([x, y]) => ({ x, y})),
+          smoothingsStrategy: "bezier",
         }}
       >
         <CoinDetailedHeader
